@@ -1,0 +1,25 @@
+# Ignore system files
+/.vscode/
+/node_modules/
+/.DS_Store
+/.env
+/.idea/
+/*.log
+
+# Ignore Windows system folders
+/Application Data/
+/Cookies/
+/Local Settings/
+/My Documents/
+/NetHood/
+/PrintHood/
+/Recent/
+/SendTo/
+/Start Menu/
+/Templates/
+/Downloads/
+/Documents/
+/Pictures/
+/Videos/
+/Music/
+/OneDrive/
