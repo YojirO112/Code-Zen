@@ -1,4 +1,5 @@
-function page(){    
+function page(){   
+    
     return <div>About</div>
 }
 
