@@ -3,11 +3,11 @@ import { v } from "convex/values";
 
 
 export default defineSchema({
-    users: defineTable({
-        userId: v.string(),//clerkId
+    users: defineTable({            // user table
+        userId: v.string(),         //clerkId
         email: v.string(),
         name: v.string(),
-        isPro: v.boolean(),
+        isPro: v.boolean(),         // ifin pro plan or not
         proSince: v.optional(v.number()),
         lemonSqueezyCustomerId: v.optional(v.string()),
         lemonSqueezyOrderId: v.optional(v.string())
@@ -22,18 +22,18 @@ export default defineSchema({
     }).index("by_user_id", ["userId"]),
 
     snippets: defineTable({
-        userId: v.string(),//clerkId
+        userId: v.string(),             //clerkId
         title: v.string(),
         language: v.string(),
         code: v.boolean(),
-        userName: v.string(), //store username for easy access
+        userName: v.string(),           //store username for easy access
     }).index("by_user_id", ["userId"]),
 
     snippetComments: defineTable({
         snippetId: v.id("snippets"),
         userId: v.string(),
         userName: v.string(),
-        content: v.string(), //this will store HTML content
+        content: v.string(),            //This will store HTML content
     }).index("by_snippet_id", ["snippetId"]),
 
     stars: defineTable({
